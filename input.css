@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+    
+     }
+  
+ 
+  
+
+  #hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url("assets/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #image1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(52, 114, 184, 0.6),
+        rgba(52, 114, 184, 0.5)
+      ),
+      url("assets/visa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 225px;
+    height: 195px;
+  }
+
+  #image2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(52, 114, 184, 0.6),
+        rgba(52, 114, 184, 0.5)
+      ),
+      url("assets/women-working.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 225px;
+    height: 195px;
+    margin: 0;
+  }
+
+  #image3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(52, 114, 184, 0.6),
+        rgba(52, 114, 184, 0.5)
+      ),
+      url("assets/doctors.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 225px;
+    height: 195px;
+    margin: 0;
+  }
+
+  #image4 {
+    background-image: linear-gradient(
+        to right,
+        rgba(52, 114, 184, 0.6),
+        rgba(52, 114, 184, 0.5)
+      ),
+      url("assets/hostel.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 225px;
+    height: 195px;
+    margin: 0;
+  }
+
+  #image1,
+  #image2,
+  #image3,
+  #image4 {
+    overflow: hidden; 
+  }
+
+
+}
+
+@layer components{
+  /* Hamburger */
+
+.hamburger{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  
+}
+}
