@@ -391,10 +391,14 @@
                 </div>
             </div>
             <div
-                class="flex flex-col md:flex-row items-center justify-around max-w-6xl mx-auto space-y-3 md:space-x-1 md:spcae-y-0 mt-20 mb-40 shadow-2xl shadow-gray-500 p-6 rounded-md">
+                class="flex flex-row items-center justify-around max-w-6xl mx-auto space-y-3 md:space-x-1 md:spcae-y-0 mt-20 mb-40 shadow-2xl shadow-gray-500 p-6 rounded-md overflow-hidden">
+
+                <div class="relative cursor-pointer">
+                    <div id="left" class="absolute flex items-center justify-center w-10 h-10 bg-[#49B050] rounded-full -top-24 -left-5 md:-top-24 md:left-0 z-50 hover:bg-opacity-70 p-2"><img src="assets/svg/less-than.svg" alt="" class="bg-center bg-origin-content"></div>
+                </div>
 
                 <!-- IMAGE 1 -->
-                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer">
+                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer image-container">
                     <div id="image1"
                         class="relative group cursor-pointer rounded-b-none rounded-t-md group-hover:scale-105">
                         <p
@@ -417,7 +421,7 @@
                         Now</button>
                 </div>
                 <!-- IMAGE 2 -->
-                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer">
+                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer image-container">
                     <div id="image2"
                         class="relative group cursor-pointer rounded-b-none rounded-t-md group-hover:scale-105">
                         <p
@@ -440,7 +444,7 @@
                         Now</button>
                 </div>
                 <!-- IMAGE 3 -->
-                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer">
+                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer image-container">
                     <div id="image3"
                         class="relative group cursor-pointer rounded-b-none rounded-t-md group-hover:scale-105">
                         <p
@@ -463,7 +467,7 @@
                         Now</button>
                 </div>
                 <!-- IMAGE 4 -->
-                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer">
+                <div class="flex flex-col items-center justify-center group overflow-hidden cursor-pointer image-container">
                     <div id="image4"
                         class="relative cursor-pointer rounded-b-none rounded-t-md group-hover:scale-105 duration-300">
                         <p
@@ -485,6 +489,10 @@
                     <button id="menu"
                         class="w-full bg-gray-700 py-3 rounded-t-none rounded-b-md font-inter text-white group-hover:bg-[#49B050] group-hover:scale-105 duration-300 active:bg-[#49B050]">Apply
                         Now</button>
+                </div>
+                
+                <div class="relative cursor-pointer">
+                    <div id="right" class="absolute flex items-center justify-center w-10 h-10 bg-[#49B050] rounded-full -top-24 -left-4 md:-top-24 md:-left-11 hover:bg-opacity-70 p-2"><img src="assets/svg/greater-than.svg" alt="" class="bg-center bg-origin-content"></div>
                 </div>
 
             </div>
