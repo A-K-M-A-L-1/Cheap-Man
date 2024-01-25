@@ -142,4 +142,17 @@
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   
 }
+
+
+/* Contact Page*/
+
+.top{
+top:-20px;
+}
+
+.down{
+top:0px;
+}
+
+
 }

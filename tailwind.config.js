@@ -13,6 +13,7 @@ module.exports = {
       fontFamily:{
         lato: 'Lato',
         inter: 'Inter',
+        Poppins: "Poppins",
       },
     },
   },
