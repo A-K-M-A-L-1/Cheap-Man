@@ -1,3 +1,6 @@
+
+
+
 // first lable
 
 const firstlable = document.getElementById('firstlable');
@@ -74,41 +77,22 @@ document.getElementById('phonenumber').addEventListener('blur', () => {
 });
 
 
-// Password
+
+
+// Messages
 
 const fivthlable = document.getElementById('fivthlable');
 
-document.getElementById('password').addEventListener('focus', () => {
+document.getElementById('msg').addEventListener('focus', () => {
 
     fivthlable.classList.add("-translate-y-5");
 
 });
 
-document.getElementById('password').addEventListener('blur', () => {
+document.getElementById('msg').addEventListener('blur', () => {
     const inputField = fivthlable.nextElementSibling;
 
     if (inputField.value === "") {
         fivthlable.classList.remove("-translate-y-5");
     }
 });
-
-
-// Confirm Password
-
-const six = document.getElementById('six');
-
-document.getElementById('confirmpassword').addEventListener('focus', () => {
-
-    six.classList.add("-translate-y-5");
-
-});
-
-document.getElementById('confirmpassword').addEventListener('blur', () => {
-    const inputField = six.nextElementSibling;
-
-    if (inputField.value === "") {
-        six.classList.remove("-translate-y-5");
-    }
-});
-
-
