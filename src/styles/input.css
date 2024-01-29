@@ -18,7 +18,7 @@
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.9)
       ),
-      url("assets/hero.png");
+      url("../../assets/hero.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,7 +30,7 @@
         rgba(52, 114, 184, 0.6),
         rgba(52, 114, 184, 0.5)
       ),
-      url("assets/visa.jpg");
+      url("../../assets/visa.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,7 +44,7 @@
         rgba(52, 114, 184, 0.6),
         rgba(52, 114, 184, 0.5)
       ),
-      url("assets/women-working.jpg");
+      url("../../assets/women-working.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,7 +59,7 @@
         rgba(52, 114, 184, 0.6),
         rgba(52, 114, 184, 0.5)
       ),
-      url("assets/doctors.jpg");
+      url("../../assets/doctors.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,7 +74,7 @@
         rgba(52, 114, 184, 0.6),
         rgba(52, 114, 184, 0.5)
       ),
-      url("assets/hostel.jpg");
+      url("../../assets/hostel.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
