@@ -1874,6 +1874,19 @@ html {
     padding-bottom: 0.5rem;
   }
 
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .md\:text-right {
     text-align: right;
   }
