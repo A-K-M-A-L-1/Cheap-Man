@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/output.css">
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
     <!-- Google Fonts -->
@@ -12,11 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- StyleSheet -->
     <link rel="stylesheet" href="./styles/output.css">
-    <title>Contact Us</title>
+    <title>Job Information</title>
 </head>
 
 <body>
-    <!-- Header -->
+
+    <!-- Hearder -->
     <header>
 
         <nav id="nav" class="flex justify-between py-5 px-6 items-center md:p-10 overflow-x-hidden">
@@ -83,124 +85,102 @@
 
     </header>
 
-    <!-- Contact Section  -->
     <section>
-        <div class="md:max-w-6xl md:mx-auto">
-            <div class="flex flex-col items-center justify-around md:flex-row md:space-x-6 xl:space-x-12 md:p-16">
-
-                <div class="hidden lg:block bg-[#0E3C64] p-10 rounded-md overflow-hidden">
-                    <div class="">
-                        <strong class="font-Poppins text-xl text-white">Contact Information</strong>
-                    </div>
-
-                    <div class="flex flex-col space-y-10 items-start justify-start my-24">
-
-                        <div class="flex space-x-5">
-                            <img src="assets/svg/contact_phone-call.svg" alt="">
-                            <p class="font-Poppins text-white">+1012 3456 789</p>
-                        </div>
-
-                        <div class="flex space-x-5">
-                            <img src="assets/svg/contact-email.svg" alt="">
-                            <p class="font-Poppins text-white">demo@gmail.com</p>
-                        </div>
-
-                        <div class="flex space-x-5">
-                            <img src="assets/svg/contact-location.svg" alt="">
-                            <p class="font-Poppins max-w-xs text-white">132 Dartmouth Street Boston, Massachusetts 02156
-                                United States</p>
-                        </div>
-
-                    </div>
-
-                    <!-- Elipse -->
-                    <div class="relative">
-                        <div class="absolute left-64 -top-20 bg-[#3472B880] w-28 h-28 opacity-50 rounded-full"></div>
-                        <div class="absolute left-72 -top-12 bg-[#3472B880] w-40 h-40 rounded-full opacity-60"></div>
-                    </div>
-
-                    <div class="flex items-center space-x-4 justify-start">
-
-
-                        <div class="flex items-stretch justify-center bg-black cursor-pointer rounded-full 
-                    w-8 h-8  duration-200 group">
-                            <img src="../assets/svg/contact-twitter.svg" class=" group-hover:invert" alt="">
-                        </div>
-
-                        <div class="flex items-stretch justify-center bg-black cursor-pointer rounded-full 
-                    w-8 h-8 duration-200 group">
-                            <img src="../assets/svg/contact-insta.svg" class="filter group-hover:invert" alt="">
-                        </div>
-
-                        <div class="flex items-stretch justify-center bg-black cursor-pointer rounded-full 
-                          duration-200 group">
-                            <!-- Apply 'filter' class to make the SVG white on hover -->
-                            <img src="../assets/svg/discord.svg" class="filter group-hover:invert" alt="">
-                        </div>
-                    </div>
+        <div class="max w 6xl mx-auto">
+            <div class="flex flex-col space-y-10 items-center mt-10 mb-32">
+                <div class="flex flex-col items-center space-y-1">
+                    <h1 class="font-Poppins font-extrabold text-3xl text-[#0E3C64]">Job Information</h1>
+                    <p class="font-Poppins text-sm opacity-85 font-medium">Your dream job, just a click away!</p>
                 </div>
 
-                <div class="md:max-w-xl mb-10">
-                    <form action="">
-                        <div class="flex flex-col items-start justify-center max-w-full border space-y-12 md:gap-20 ">
+                <div>
+                    <table class="table-fixed w-[40rem]">
 
-                            <div
-                                class="flex flex-col md:flex-row items-center justify-between space-y-12 md:space-x-28 md:space-y-0">
-                                <div class="relative group">
-                                    <label id="firstlable" class="absolute font-Poppins duration-300"
-                                        for="firstname">First
-                                        name</label>
-                                    <input class="focus:outline-none font-Poppins border-b-black border" type="text"
-                                        id="firstname">
-                                </div>
+                        <tbody>
+                            <colgroup>
+                                <col style="width: 50%;">
+                                <col style="width: 1%;">
+                                <col style="width: 49%;">
+                            </colgroup>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right py-3 px-7  text-xl">Job Title
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-2xl py-3 px-7">Driving</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Country Name
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-2xl py-3 px-7">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Company Name
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-2xl py-3 px-7">Lorem ipsum</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3  px-7">Duty Timings
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl py-3 px-7">12 hours</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Over-time</td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Accomodation
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Food</td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Visa Price
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">12 Lacks</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right text-xl py-3 px-7">Salary</td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">120000 RUPEES</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right py-3 text-xl px-7">Working Days
+                                </td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-2xl px-7 py-3">5</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right py-3 px-7 text-xl">Ticket By
+                                    Company</td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="font-Poppins font-extrabold text-gray-700 text-right py-3 px-7  text-xl">Visa Process
+                                    By Company</td>
+                                <td class="font-bold text-center py-3">:</td>
+                                <td class="font-Poppins font-extrabold text-xl px-7 py-3">No</td>
+                            </tr>
 
-                                <div class="relative group">
-                                    <label id="secondlable" class="absolute font-Poppins duration-300"
-                                        for="lastname">Last
-                                        name</label>
-                                    <input class="focus:outline-none font-Poppins border-b-black border" type="text"
-                                        id="lastname">
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex flex-col md:flex-row items-center justify-between md:space-x-28 space-y-12 md:space-y-0">
-                                <div class="thirdlable">
-                                    <label id="thirdlable" class="absolute font-Poppins duration-300"
-                                        for="mail">Mail</label>
-                                    <input class="focus:outline-none font-Poppins border-b-black border" type="email"
-                                        id="mail">
-                                </div>
-
-                                <div class="relative group">
-                                    <label id="forthlable" class="absolute font-Poppins duration-300"
-                                        for="phonenumber">Phone Number</label>
-                                    <input class="focus:outline-none font-Poppins border-b-black border" type="tel"
-                                        id="phonenumber">
-                                </div>
-                            </div>
-
-                            <div class="relative group">
-                                <label id="fivthlable" class="absolute  font-Poppins duration-300"
-                                    for="msg">Message</label>
-                                <input class="focus:outline-none md:w-[35rem] border font-Poppins border-b-black"
-                                    type="text" id="msg">
-                                <!-- <div class="border-b-black border w-[20rem]"></div> -->
-                            </div>
-                        </div>
-
-                        <div class="flex items-stretch justify-center md:justify-end">
-                            <span>
-                                <button type="submit"
-                                    class="font-Poppins bg-[#49B050] py-2 px-6 rounded-sm text-white mt-20 hover:opacity-90 hover:text-neutral-200">Send
-                                    Message</button>
-                            </span>
-                        </div>
-                    </form>
+                            <!-- Add more rows as needed for other information -->
+                        </tbody>
+                    </table>
                 </div>
 
-
-
+                <!-- Apply Now BTN -->
+                <span class="pt-16"><button type="submit"
+                        class="bg-[#44A24E] text-white py-2 px-6 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black duration-300 rounded-sm font-Poppins">Apply
+                        now</button></span>
             </div>
         </div>
     </section>
@@ -354,7 +334,7 @@
         </div>
     </footer>
 
-    <script src="scripts/contact.js"></script>
+    <script src="scripts/jobinfo.js"></script>
     <script src="scripts/hamburger.js"></script>
 
 </body>
