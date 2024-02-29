@@ -1,98 +1,124 @@
 
+// *************************************************Form************************************************
+
+// first Name
+
+const outline1 = document.getElementById('outline_1');
+const firstname = document.getElementById('firstname');
 
 
-// first lable
-
-const firstlable = document.getElementById('firstlable');
-
-document.getElementById('firstname').addEventListener('focus', () => {
-
-    firstlable.classList.add("-translate-y-5");
-
+// foucs 
+firstname.addEventListener('focus', function() {
+    outline1.classList.add("outline-[#8a2be2]");
+    
 });
 
-document.getElementById('firstname').addEventListener('blur', () => {
-    const inputField = firstlable.nextElementSibling;
-
-    if (inputField.value === "") {
-        firstlable.classList.remove("-translate-y-5");
-    }
+// blur
+firstname.addEventListener('blur', function() {
+    outline1.classList.remove("outline-[#8a2be2]");
+    
 });
 
 
-// lastname
 
-const lastname = document.getElementById('secondlable');
 
-document.getElementById('lastname').addEventListener('focus', () => {
+// last Name
 
-    secondlable.classList.add("-translate-y-5");
+const outline2 = document.getElementById('outline_2');
+const lastname = document.getElementById('lastname');
 
+
+// foucs 
+lastname.addEventListener('focus', function() {
+    outline2.classList.add("outline-[#8a2be2]");
+    
 });
 
-document.getElementById('lastname').addEventListener('blur', () => {
-    const inputField = secondlable.nextElementSibling;
-
-    if (inputField.value === "") {
-        secondlable.classList.remove("-translate-y-5");
-    }
+// blur
+lastname.addEventListener('blur', function() {
+    outline2.classList.remove("outline-[#8a2be2]");
+    
 });
+
 
 
 // Mail 
 
-const thirdlable = document.getElementById('thirdlable');
+const outline3 = document.getElementById('outline_3');
+const Email = document.getElementById('email');
 
-document.getElementById('mail').addEventListener('focus', () => {
 
-    thirdlable.classList.add("-translate-y-5");
-
+// foucs 
+Email.addEventListener('focus', function() {
+    outline3.classList.add("outline-[#8a2be2]");
+   
 });
 
-document.getElementById('mail').addEventListener('blur', () => {
-    const inputField = thirdlable.nextElementSibling;
-
-    if (inputField.value === "") {
-        thirdlable.classList.remove("-translate-y-5");
-    }
+// blur
+Email.addEventListener('blur', function() {
+    outline3.classList.remove("outline-[#8a2be2]");
+    
 });
+
 
 
 // Phone Number
 
-const forthlable = document.getElementById('forthlable');
+const outline4 = document.getElementById('outline_4');
+const phone = document.getElementById('phone');
 
-document.getElementById('phonenumber').addEventListener('focus', () => {
 
-    forthlable.classList.add("-translate-y-5");
+// foucs 
+phone.addEventListener('focus', function() {
+    outline4.classList.add("outline-[#8a2be2]");
+    
+});
+
+// blur
+phone.addEventListener('blur', function() {
+    outline4.classList.remove("outline-[#8a2be2]");
+    
+});
+
+
+
+
+// select 
+
+const outline5 = document.getElementById('outline_5');
+const select = document.getElementById('select');
+
+
+// foucs 
+select.addEventListener('focus', function() {
+    outline5.classList.add("outline-[#8a2be2]");
 
 });
 
-document.getElementById('phonenumber').addEventListener('blur', () => {
-    const inputField = forthlable.nextElementSibling;
+// blur
+select.addEventListener('blur', function() {
+    outline5.classList.remove("outline-[#8a2be2]");
 
-    if (inputField.value === "") {
-        forthlable.classList.remove("-translate-y-5");
-    }
 });
-
-
 
 
 // Messages
 
-const fivthlable = document.getElementById('fivthlable');
+const outline6 = document.getElementById('outline_6');
+const msg = document.getElementById('msg');
 
-document.getElementById('msg').addEventListener('focus', () => {
 
-    fivthlable.classList.add("-translate-y-5");
+// foucs 
+msg.addEventListener('focus', function() {
+    outline6.classList.add("outline-[#8a2be2]");
 
 });
 
-document.getElementById('msg').addEventListener('blur', () => {
-    const inputField = fivthlable.nextElementSibling;
+// blur
+msg.addEventListener('blur', function() {
+    outline6.classList.remove("outline-[#8a2be2]");
 
-    if (inputField.value === "") {
-        fivthlable.classList.remove("-translate-y-5");
-    }
 });
+
+
+

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../assets/favicon-32x32.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap" rel="stylesheet">
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="flex md:flex-col md:space-y-5 lg:space-y-0 lg:flex-row lg:items-start md:items-center justify-between">
+        <!-- Left Side Large Devices-->
+        <div class="hidden lg:block">
+            <div class="flex flex-col space-y-16 items-center h-[140vh] shadow-2xl shadow-zinc-600 p-10">
+                <!-- Logo -->
+                <span class="mt-4"><img src="../assets/nav-logo.png" class="w-16" alt=""></span>
+
+                <!-- Menu  -->
+                <div class="flex flex-col items-start space-y-5 ">
+
+                    <!-- Profile -->
+                    <div id="profile"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 profile  ">
+                        <!-- Profile logo  -->
+                        <span class="text-zinc-500 group-hover:cursor-pointer svg-one">
+                            <!-- Logout Svg -->
+                            <svg width="22" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.9596 5.72938C12.9596 7.7967 11.3021 9.45435 9.23331 9.45435C7.16524 9.45435 5.50698 7.7967 5.50698 5.72938C5.50698 3.66207 7.16524 2.00513 9.23331 2.00513C11.3021 2.00513 12.9596 3.66207 12.9596 5.72938ZM9.23259 16.0826C6.17943 16.0826 3.60156 15.5864 3.60156 13.6718C3.60156 11.7565 6.19562 11.2779 9.23259 11.2779C12.2865 11.2779 14.8636 11.7741 14.8636 13.6887C14.8636 15.604 12.2696 16.0826 9.23259 16.0826Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-profile">
+                            Profile
+                        </p>
+                    </div>
+
+
+                    <!-- Dashboard -->
+                    <div id="dashboard"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 dashboard  ">
+                        <!-- dashboard logo  -->
+                        <span class="text-zinc-500 group-hover:cursor-pointer svg-two">
+                            <!-- Logout Svg -->
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.3125 4.375V0H14V4.375H8.3125ZM0 7V0H5.6875V7H0ZM8.3125 14V7H14V14H8.3125ZM0 14V9.625H5.6875V14H0Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-dashboard">
+                            Dashboard
+                        </p>
+                    </div>
+
+                    <!-- Logout -->
+                    <div id="logout"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 logout  ">
+                        <!-- dashboard logo  -->
+                        <span class="text-zinc-500 group-hover:cursor-pointer w-[12px] svg-three">
+                            <!-- Logout Svg -->
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.96752 8.60886C6.65958 8.60886 6.41608 8.84818 6.41608 9.15085C6.41608 9.44647 6.65958 9.69283 6.96752 9.69283H11.2645V8.60898H14.1785L13.0523 7.48981C12.8411 7.27865 12.8411 6.93375 13.0523 6.72259C13.2635 6.50438 13.6084 6.50438 13.8195 6.71555L15.8749 8.76383C15.9804 8.86941 16.0368 9.00315 16.0368 9.15097C16.0368 9.29174 15.9804 9.43252 15.8749 9.53106L13.8195 11.5793C13.714 11.6849 13.5732 11.7412 13.4394 11.7412C13.2987 11.7412 13.1579 11.6849 13.0523 11.5793C12.8411 11.3682 12.8411 11.0233 13.0523 10.8121L14.1785 9.69295H11.2645V13.0574C11.2645 14.7819 9.83931 16.1896 8.07756 16.1896H4.58989C2.83531 16.1896 1.41016 14.7889 1.41016 13.0644V5.24432C1.41016 3.51278 2.84247 2.11206 4.59705 2.11206H8.09189C9.83931 2.11206 11.2645 3.51278 11.2645 5.23728V8.60886H6.96752Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-logout">
+                            Logout
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Left Side Medium Devices-->
+        <div class="hidden md:block lg:hidden">
+            <div class="flex items-center justify-center space-x-72 w-[50rem] shadow-xl shadow-zinc-300 p-10">
+                <!-- Logo -->
+                <span class="mt-4"><img src="../assets/nav-logo.png" class="w-16" alt=""></span>
+
+                <!-- Menu  -->
+                <div class="flex items-start space-x-1">
+
+                    <!-- Profile -->
+                    <div id="profile"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 profile  ">
+                        <!-- Profile logo  -->
+                        <span class="group-hover:cursor-pointer svg-one">
+                            <!-- Logout Svg -->
+                            <svg width="22" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.9596 5.72938C12.9596 7.7967 11.3021 9.45435 9.23331 9.45435C7.16524 9.45435 5.50698 7.7967 5.50698 5.72938C5.50698 3.66207 7.16524 2.00513 9.23331 2.00513C11.3021 2.00513 12.9596 3.66207 12.9596 5.72938ZM9.23259 16.0826C6.17943 16.0826 3.60156 15.5864 3.60156 13.6718C3.60156 11.7565 6.19562 11.2779 9.23259 11.2779C12.2865 11.2779 14.8636 11.7741 14.8636 13.6887C14.8636 15.604 12.2696 16.0826 9.23259 16.0826Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-profile">
+                            Profile
+                        </p>
+                    </div>
+
+
+                    <!-- Dashboard -->
+                    <div id="dashboard"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 dashboard  ">
+                        <!-- dashboard logo  -->
+                        <span class="text-zinc-500 group-hover:cursor-pointer svg-two">
+                            <!-- Logout Svg -->
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.3125 4.375V0H14V4.375H8.3125ZM0 7V0H5.6875V7H0ZM8.3125 14V7H14V14H8.3125ZM0 14V9.625H5.6875V14H0Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-dashboard">
+                            Dashboard
+                        </p>
+                    </div>
+
+                    <!-- Logout -->
+                    <div id="logout"
+                        class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 logout  ">
+                        <!-- dashboard logo  -->
+                        <span class="text-zinc-500 group-hover:cursor-pointer w-[12px] svg-three">
+                            <!-- Logout Svg -->
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.96752 8.60886C6.65958 8.60886 6.41608 8.84818 6.41608 9.15085C6.41608 9.44647 6.65958 9.69283 6.96752 9.69283H11.2645V8.60898H14.1785L13.0523 7.48981C12.8411 7.27865 12.8411 6.93375 13.0523 6.72259C13.2635 6.50438 13.6084 6.50438 13.8195 6.71555L15.8749 8.76383C15.9804 8.86941 16.0368 9.00315 16.0368 9.15097C16.0368 9.29174 15.9804 9.43252 15.8749 9.53106L13.8195 11.5793C13.714 11.6849 13.5732 11.7412 13.4394 11.7412C13.2987 11.7412 13.1579 11.6849 13.0523 11.5793C12.8411 11.3682 12.8411 11.0233 13.0523 10.8121L14.1785 9.69295H11.2645V13.0574C11.2645 14.7819 9.83931 16.1896 8.07756 16.1896H4.58989C2.83531 16.1896 1.41016 14.7889 1.41016 13.0644V5.24432C1.41016 3.51278 2.84247 2.11206 4.59705 2.11206H8.09189C9.83931 2.11206 11.2645 3.51278 11.2645 5.23728V8.60886H6.96752Z"
+                                    fill="#71717A" />
+                            </svg>
+                        </span>
+                        <p
+                            class="font-Poppins text-sm text-zinc-500 font-semibold group-hover:cursor-pointer text-logout">
+                            Logout
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Left Side Mobile Devices -->
+        <div id="menu" class="hidden">
+            <div
+                class=" md:hidden text-center absolute z-20  h-screen bg-gradient-to-l opacity-90 from-blue-500 to-[#8a2be2] top-0 left-0 right-0 bottom-0 ">
+                <div class="flex flex-col space-y-16 items-center p-10 z-50">
+                    <!-- Logo -->
+                    <span class="mt-4"><img src="../assets/footer-logo.png" class="w-10 z-30" alt=""></span>
+
+                    <!-- Menu  -->
+                    <div class="flex flex-col items-start space-y-5 ">
+
+                        <!-- Profile -->
+                        <div id="profile"
+                            class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 profile ">
+                            <!-- Profile logo  -->
+                            <span class="text-zinc-500 group-hover:cursor-pointer svg-one">
+                                <!-- Logout Svg -->
+                                <svg width="22" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.9596 5.72938C12.9596 7.7967 11.3021 9.45435 9.23331 9.45435C7.16524 9.45435 5.50698 7.7967 5.50698 5.72938C5.50698 3.66207 7.16524 2.00513 9.23331 2.00513C11.3021 2.00513 12.9596 3.66207 12.9596 5.72938ZM9.23259 16.0826C6.17943 16.0826 3.60156 15.5864 3.60156 13.6718C3.60156 11.7565 6.19562 11.2779 9.23259 11.2779C12.2865 11.2779 14.8636 11.7741 14.8636 13.6887C14.8636 15.604 12.2696 16.0826 9.23259 16.0826Z"
+                                        fill="#fff" />
+                                </svg>
+                            </span>
+                            <p
+                                class="font-Poppins text-sm text-white tracking-widest font-semibold group-hover:cursor-pointer text-profile">
+                                Profile
+                            </p>
+                        </div>
+
+
+                        <!-- Dashboard -->
+                        <div id="dashboard"
+                            class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 dashboard  ">
+                            <!-- dashboard logo  -->
+                            <span class="text-zinc-500 group-hover:cursor-pointer svg-two">
+                                <!-- Logout Svg -->
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.3125 4.375V0H14V4.375H8.3125ZM0 7V0H5.6875V7H0ZM8.3125 14V7H14V14H8.3125ZM0 14V9.625H5.6875V14H0Z"
+                                        fill="#fff" />
+                                </svg>
+                            </span>
+                            <p
+                                class="font-Poppins text-sm text-white tracking-widest font-semibold group-hover:cursor-pointer text-dashboard">
+                                Dashboard
+                            </p>
+                        </div>
+
+                        <!-- Logout -->
+                        <div id="logout"
+                            class="flex items-center justify-between space-x-2 group py-2 pl-4 pr-8 -ml-3  hover:shadow-inner hover:shadow-slate-400  hover:bg-gray-500 hover:bg-opacity-45 rounded-full cursor-pointer duration-100 logout  ">
+                            <!-- dashboard logo  -->
+                            <span class="text-zinc-500 group-hover:cursor-pointer w-[12px] svg-three">
+                                <!-- Logout Svg -->
+                                <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.96752 8.60886C6.65958 8.60886 6.41608 8.84818 6.41608 9.15085C6.41608 9.44647 6.65958 9.69283 6.96752 9.69283H11.2645V8.60898H14.1785L13.0523 7.48981C12.8411 7.27865 12.8411 6.93375 13.0523 6.72259C13.2635 6.50438 13.6084 6.50438 13.8195 6.71555L15.8749 8.76383C15.9804 8.86941 16.0368 9.00315 16.0368 9.15097C16.0368 9.29174 15.9804 9.43252 15.8749 9.53106L13.8195 11.5793C13.714 11.6849 13.5732 11.7412 13.4394 11.7412C13.2987 11.7412 13.1579 11.6849 13.0523 11.5793C12.8411 11.3682 12.8411 11.0233 13.0523 10.8121L14.1785 9.69295H11.2645V13.0574C11.2645 14.7819 9.83931 16.1896 8.07756 16.1896H4.58989C2.83531 16.1896 1.41016 14.7889 1.41016 13.0644V5.24432C1.41016 3.51278 2.84247 2.11206 4.59705 2.11206H8.09189C9.83931 2.11206 11.2645 3.51278 11.2645 5.23728V8.60886H6.96752Z"
+                                        fill="#fff" />
+                                </svg>
+                            </span>
+                            <p
+                                class="font-Poppins text-sm text-white tracking-widest font-semibold group-hover:cursor-pointer text-logout">
+                                Logout
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="flex-grow overflow-x-hidden">
+            <!-- Nav -->
+            <div class="flex items-center justify-between p-7">
+                <!-- Dashboard Heading and tagline -->
+                <div class="flex flex-col space-y-1 items-start">
+                    <strong class="font-Poppins text-lg md:text-3xl">Dashboard</strong>
+                    <p class="font-Poppins text-xs font-medium text-zinc-500">Information about your
+                        current plan and usages</p>
+                </div>
+
+                <!-- Date & Hamburger Section -->
+                <div class="flex flex-col space-y-2 items-end">
+                    <!-- Hamberger -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                            <span class="hamburger-top"></span>
+                            <span class="hamburger-middle"></span>
+                            <span class="hamburger-bottom"></span>
+                        </button>
+                    </div>
+                    <div id="datePlaceholder"
+                        class="flex items-center justify-center space-x-1 font-Poppins font-medium text-xs cursor-pointer">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Section -->
+
+            <section>
+                <div class="max w 6xl mx-auto">
+                    <div class="flex flex-col space-y-10 items-center mt-10 mb-32">
+                        <div class="flex flex-col items-center space-y-1">
+                            <div class="relative flex items-center">
+                                <span  class="absolute -left-10 md:-left-40 lg:-left-64git">
+                                    <img src="../assets/svg/back.svg" id="back"
+                                        class="w-3 cursor-pointer hover:opacity-90 object-center" alt="">
+                                </span>
+                                <div>
+                                    <h1 class="font-Poppins font-extrabold text-3xl text-[#0E3C64]">Job Information</h1>
+                                    <p class="font-Poppins text-sm opacity-85 font-medium">Your dream job, just a click
+                                        away!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <table class="table-fixed w-[40rem]">
+
+                                <tbody>
+                                    <colgroup>
+                                        <col style="width: 50%;">
+                                        <col style="width: 1%;">
+                                        <col style="width: 49%;">
+                                    </colgroup>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Job Title
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Driving
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Country Name
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Lorem
+                                            ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Company Name
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Lorem
+                                            ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Duty Timings
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">12
+                                            hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Over-time</td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Yes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Accomodation
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Yes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Food</td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Yes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Visa Price
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">12
+                                            Lacks</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Salary</td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">120000
+                                            RUPEES</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Working Days
+                                        </td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Ticket By
+                                            Company</td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">Yes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="font-Poppins text-xs font-semibold tracking-tight w-[1rem] md:font-extrabold text-gray-700 text-right py-3 px-3 md:px-7  md:text-xl">
+                                            Visa Process
+                                            By Company</td>
+                                        <td class="font-bold text-center py-3">:</td>
+                                        <td class="font-Poppins font-medium md:font-extrabold text-xl px-7 py-3">No</td>
+                                    </tr>
+
+                                    <!-- Add more rows as needed for other information -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex items-center space-x-3 justify-between">
+                            <span><button
+                                    class="hover:bg-[#49B050] px-5 py-2 rounded-md font-Poppins text-[#49B050] hover:text-white hover:-translate-y-1 border-2 border-[#49B050] border-dotted  duration-300 shadow hover:shadow-black hover:shadow-2xl">Cancel</button>
+                            </span><span><button
+                                    class="bg-[#49B050] px-8 py-3 rounded-md font-Poppins text-white hover:-translate-y-1 duration-300 shadow hover:shadow-black hover:shadow-2xl hover:bg-opacity-90">Save</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+
+    <script src="./scripts/editjobinfo.js"></script>
+    <script src="./scripts/hamburger.js"></script>
+</body>
+
+</html>
